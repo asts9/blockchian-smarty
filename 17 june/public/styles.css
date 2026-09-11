@@ -1,0 +1,25 @@
+:root { color-scheme: dark; font-family: Inter, ui-sans-serif, system-ui, sans-serif; background: #11110f; color: #f4f0e8; }
+* { box-sizing: border-box; }
+body { margin: 0; background: radial-gradient(circle at 80% 0%, #463c26 0, transparent 35%), #11110f; }
+.shell { max-width: 960px; margin: 0 auto; padding: 72px 24px; }
+.eyebrow { color: #b9a26a; font-size: 12px; letter-spacing: .18em; font-weight: 700; }
+h1 { font-size: clamp(48px, 9vw, 94px); line-height: .95; letter-spacing: -.06em; margin: 30px 0 22px; }
+h1 em { color: #d9b86c; font-style: normal; }
+.intro { color: #aaa69d; max-width: 470px; font-size: 17px; line-height: 1.6; }
+.panel { margin: 70px 0 68px; background: #1b1b18; border: 1px solid #35342f; padding: 28px; max-width: 600px; box-shadow: 12px 12px 0 #d9b86c; }
+label { display: block; color: #aaa69d; font-size: 13px; margin-bottom: 19px; }
+input, textarea { display: block; width: 100%; background: #11110f; border: 1px solid #3b3a34; color: #f4f0e8; margin-top: 8px; padding: 14px; font: inherit; }
+textarea { min-height: 120px; resize: vertical; }
+input:focus, textarea:focus { outline: 2px solid #d9b86c; border-color: transparent; }
+button { background: #d9b86c; border: 0; color: #191812; cursor: pointer; font-weight: 800; padding: 14px 18px; }
+button:hover { background: #f1d589; }
+button span { font-size: 18px; margin-left: 18px; }
+#status { min-height: 20px; color: #aaa69d; font-size: 13px; }
+.success { color: #8dd49b !important; }.error { color: #ef817f !important; }
+.section-heading { align-items: center; border-bottom: 1px solid #35342f; display: flex; justify-content: space-between; }
+h2 { font-size: 26px; letter-spacing: -.03em; }
+.text-button { background: transparent; color: #d9b86c; padding: 8px 0; }
+.record { border-bottom: 1px solid #292824; padding: 22px 0; }
+.record-meta { display: flex; justify-content: space-between; gap: 20px; }.record-meta span, code, .muted { color: #77756e; font-size: 12px; }
+.record p { color: #d5d1c7; line-height: 1.6; margin: 10px 0 15px; white-space: pre-wrap; }
+@media (max-width: 600px) { .shell { padding: 40px 18px; }.panel { margin: 45px 0; box-shadow: 7px 7px 0 #d9b86c; }.record-meta { display: block; }.record-meta span { display: block; margin-top: 6px; } }

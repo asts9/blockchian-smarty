@@ -1,0 +1,38 @@
+npm install
+copy .env.example .env
+npm run compile
+npm run node
+npm run deploy
+npm start<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>On-chain Registry</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header>
+        <p class="eyebrow">LOCAL TESTNET / ON-CHAIN REGISTRY</p>
+        <h1>Publish a thought.<br /><em>Keep it forever.</em></h1>
+        <p class="intro">A tiny registry powered by Solidity, Hardhat, and an Express API. Every entry is stored on the blockchain.</p>
+      </header>
+
+      <section class="panel">
+        <form id="record-form">
+          <label>Name <input id="name" maxlength="80" required placeholder="Your name or alias" /></label>
+          <label>Message <textarea id="content" maxlength="500" required placeholder="What do you want to put on-chain?"></textarea></label>
+          <button type="submit">Publish to chain <span>↗</span></button>
+          <p id="status" role="status"></p>
+        </form>
+      </section>
+
+      <section class="records">
+        <div class="section-heading"><h2>Recent entries</h2><button id="refresh" class="text-button">Refresh</button></div>
+        <div id="record-list" class="record-list"><p class="muted">Loading the registry…</p></div>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
